@@ -1,0 +1,84 @@
+{
+  "name": "beaches-context-redux",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write  \"src/**/*.{js,jsx,css,json}\"",
+    "dev": "(http-server --cors=* -p ${KC_OIDC_PORT} &) && parcel src/index.html -p ${WEB_PORT}",
+    "dev-local": "(http-server --cors=* -p 8990 &) && parcel src/index.html",
+    "start": "cross-env NODE_ENV=development parcel public/index.html ",
+    "init-assets": "http-server",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --no-minify --public-url /"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-react-app": "^9.0.0",
+    "events": "^3.0.0",
+    "history": "^4.9.0",
+    "http": "^0.0.0",
+    "http-server": "^0.11.1",
+    "https": "^1.0.0",
+    "ip": "^1.1.5",
+    "parcel": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "socket.io-client": "^2.2.0",
+    "styled-components": "^4.3.1",
+    "ui": "^0.2.4",
+    "url": "^0.11.0",
+    "util": "^0.12.0",
+    "zlib": "^1.0.5"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.1",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-json-url-loader": "^0.1.2",
+    "prettier": "^1.18.2"
+  }
+}

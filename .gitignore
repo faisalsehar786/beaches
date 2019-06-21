@@ -1,0 +1,8 @@
+dist/*
+.cache/*
+.env
+*-lock.json
+node_modules/*
+*.log
+v8-compile-cache*
+yarn--*
